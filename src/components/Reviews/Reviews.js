@@ -1,9 +1,27 @@
 import React from 'react';
+import useReviews from '../../hooks/useReviews';
+import SingleReview from '../SingleReview/SingleReview';
 
 const Reviews = () => {
+    const [reviews, setRiviews] = useReviews();
     return (
         <div>
-            <h5>This is review page</h5>
+            <section>
+             <h2>All review of our products</h2>
+             <div className='review-list-container'>
+                 {
+                     reviews.map(review =>
+                    <SingleReview  key={review.id}
+                    review={review}></SingleReview>
+                    
+                   )
+                 }
+
+             </div>
+
+            
+
+         </section>
         </div>
     );
 };

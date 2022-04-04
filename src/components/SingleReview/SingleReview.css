@@ -1,0 +1,13 @@
+.single-review{
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+.single-review p{
+    font-weight: bold;
+}
+.single-review img{
+    padding: 10px;
+    height: 200px;
+}

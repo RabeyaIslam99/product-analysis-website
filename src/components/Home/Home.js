@@ -2,7 +2,7 @@
 import useReviews from '../../hooks/useReviews';
 import SingleReview from '../SingleReview/SingleReview';
 import image from './../../images (3).jpg'
-
+import './Home.css'
 const Home = () => {
     const [reviews, setRiviews] = useReviews();
     return (
@@ -33,7 +33,7 @@ const Home = () => {
 
              </div>
 
-             <button>See all reviews</button>
+             <button className='review-btn'>See all reviews</button>
 
          </section>
         </div>

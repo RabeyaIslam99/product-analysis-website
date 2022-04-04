@@ -1,0 +1,16 @@
+.review-list-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+   margin: 80px;
+   margin-bottom: 70px;
+}
+.review-btn{
+    margin: 100px;
+    padding: 10px;
+   background-color: lightsalmon;
+   border: none;
+   border-radius: 5px;
+   font-size: 20px;
+   font-weight: bold;
+}
