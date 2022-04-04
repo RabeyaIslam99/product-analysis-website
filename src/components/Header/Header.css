@@ -1,0 +1,15 @@
+.nav-list {
+    color: coral;
+    margin-top: 30px;
+
+}
+
+.nav-list a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+
+
+}
