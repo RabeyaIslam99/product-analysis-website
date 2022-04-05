@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import SingleReview from '../SingleReview/SingleReview';
 import image from './../../images (3).jpg'
@@ -9,10 +10,10 @@ const Home = () => {
       
         <div>
           
-         <section style={{display:'flex',padding:'80px',marginLeft:'100px'}}>
+         <section style={{display:'flex',padding:'80px',marginLeft:'50px'}}>
          <div style={{marginRight:"100px"}}>
           <h3> Best Way to style yourself</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquid cupiditate sint nam ipsa quam delectus ut mollitia excepturi animi quae cumque laudantium amet recusandae neque minima. Enim, labore quae?</p>
+          <p>In modern discourse, hijab refers to headcoverings worn by Muslim women. While Islamic headcoverings can come in many forms, hijab often specifically refers to a cloth wrapped around the head and neck, covering the hair but leaving the face visible</p>
           </div>
            <div>
                <img src={image} alt="" />
@@ -32,8 +33,9 @@ const Home = () => {
                  }
 
              </div>
-
-             <button className='review-btn'>See all reviews</button>
+             <Link to='/reviews'> <button className='review-btn'
+        >See all reviews</button></Link>
+            
 
          </section>
         </div>

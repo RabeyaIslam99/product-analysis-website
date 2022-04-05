@@ -1,9 +1,10 @@
 import React from 'react';
+import Chart from '../Chart/Chart';
 
 const DashBoard = () => {
     return (
         <div>
-            <h4>This is dashboard</h4>
+            <Chart></Chart>
         </div>
     );
 };
