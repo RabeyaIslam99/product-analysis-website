@@ -8,3 +8,10 @@
 .blogs p{
   font-weight: 500;
 }
+.blog{
+    border: 2px solid gainsboro;
+    border-radius: 14px;
+    padding: 10px;
+    margin-top: 30px;
+   
+}
