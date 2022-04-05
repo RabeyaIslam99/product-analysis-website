@@ -7,6 +7,7 @@ import Reviews from './components/Reviews/Reviews';
 import Blogs from './components/Blogs/Blogs';
 import DashBoard from './components/DashBoard/DashBoard';
 import About from './components/About/About';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
       <Route path='/about' element={<About></About>}></Route>
+      <Route path='*'  element={<ErrorPage></ErrorPage>} />
     </Routes>
      </div>
     
