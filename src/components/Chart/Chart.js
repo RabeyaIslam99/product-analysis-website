@@ -1,7 +1,6 @@
 import React from 'react';
-import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
-
-
+import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart,  Tooltip, XAxis, YAxis } from 'recharts';
+import './Chart.css'
 const data = [
     {
         "month": "Mar",
@@ -43,6 +42,7 @@ const data = [
 const Chart = () => {
     return (
         <div>
+        <div className='line-chart'>
           <LineChart width={730} height={250} data={data}
   margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -56,7 +56,8 @@ const Chart = () => {
 
 </LineChart>
 
-
+</div>
+<div className='bar-chart'>
 <BarChart width={730} height={250} data={data}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="month" />
@@ -67,6 +68,7 @@ const Chart = () => {
   <Bar dataKey="revenue" fill="#82ca9d" />
 </BarChart>
         </div>
+       </div>
     );
 };
 

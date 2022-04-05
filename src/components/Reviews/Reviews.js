@@ -7,7 +7,7 @@ const Reviews = () => {
     return (
         <div>
             <section>
-             <h2>All review of our products review</h2>
+             <h2 style={{color:'chocolate',marginTop:'50px'}}>All review of our products review</h2>
              <div className='review-list-container'>
                  {
                      reviews.map(review =>
